@@ -146,3 +146,17 @@
     transform: translate(-50%, -50%); /* Center the image */
     z-index: -1; /* Ensure the hospital photo appears on top of the background */
 }
+.footer{
+  display: flex;
+justify-content: space-between;
+align-items: flex-start; 
+padding: 12px 20px;
+background-color: #20beca8a;
+color: white;
+position: relative;
+}
+.footer p{
+  color: black;
+  text-align: center;
+  margin-left: 250pt;
+}

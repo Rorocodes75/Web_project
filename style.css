@@ -1,0 +1,148 @@
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding: 12px 20px;
+    background-color: #20beca8a;
+    color: white;
+    position: relative;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction:row;
+    color: black;
+}
+
+.contact-info .email{
+    text-align: center;
+    margin-left: 110pt;
+    margin-right: 20px;
+}
+.contact-info .telephone{
+    text-align: center;
+  
+    margin-right: 20px;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    margin-right: auto; /* Ensures the social media icons stay aligned before the logo */
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 3pt;
+    margin-right: 5pt;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    height: 50px;
+}
+.navbar {
+    overflow: scroll;
+    z-index: 3;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgb(28, 25, 25);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    z-index: 333;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    width: 10pt;
+    height: 1-pt;
+  }
+
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: 20beca8a;
+  }
+  
+  .dropdown-content {
+    display: none ;
+    position: absolute;
+    background-color: #20beca8a;
+
+  }
+  
+  .dropdown-content a {
+    float:none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #24b7b4;
+  
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display:block;
+    
+  }
+
+  /* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height based on your layout */
+}
+
+/* Container for the overlapping images */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Background Image */
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; /* Allow the next image to be layered on top */
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Hospital Photo */
+.hospital-photo {
+    width: 300px; /* Set the size for the hospital photo */
+    height: 250px;
+    border-radius: 20%;
+    position: absolute;
+    top: 50%; /* Adjust position */
+    left: 70%;
+    transform: translate(-50%, -50%); /* Center the image */
+    z-index: -1; /* Ensure the hospital photo appears on top of the background */
+}

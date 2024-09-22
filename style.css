@@ -58,7 +58,7 @@
     text-align: center;
     text-decoration: none;
     background-color: #20beca8a;
-    height: 95pt;    
+    height: 9pt;    
   }
   
   .dropdown {
@@ -170,12 +170,66 @@
     transform: translate(-50%, -50%); 
     z-index: -1; 
 }
+.Department-1{
+  width: 220px;
+    height: 190px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 10%;
+    border-color: rgb(37, 167, 218);
+    z-index: 1; 
+}
+   
+.Department-2{
+    width: 220px;
+    height: 190px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 10%;
+    border-color: rgb(37, 167, 218);
+    z-index: 1; 
+    
+}
+.Departments-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.department {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 220px; 
+}
+.department h1, .department p {
+  margin: 0;
+}
+
+.department h1 {
+  font-size: 18px;
+  margin-top: 20px; 
+}
+
+.department p {
+  font-size: 14px;
+  margin-top: 5px; 
+}
+
+.Department-1-info, .Department-2-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 .footer{
   display:flex;
   justify-content: space-between;
   align-items: flex-start; 
   margin-top: 20%;
-  padding: 40px 20px;
+  padding: 12px 20px;
   background-color: #20beca8a;
   color: white;
   position: relative;

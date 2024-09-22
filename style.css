@@ -111,7 +111,7 @@
     display:block;
     
   }
-.images-text a{
+.book-appointment-button {
   margin-left: 200px;
   text-decoration: none;
   background-color:#c5e6e9;
@@ -120,13 +120,11 @@
   padding: 1px 4px;
   border-radius: 4px;
 }
-.images-text a:hover{
+.book-appointment-button:hover{
   background-color: #24b7b4;
-
 }
 
 .icon{
-
   width: 20px;
   height: 20px;
   margin-left: 3pt;

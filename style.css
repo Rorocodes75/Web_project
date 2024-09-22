@@ -174,14 +174,14 @@
 }
 .footer{
   display:flex;
-justify-content: space-between;
-align-items: flex-start; 
-margin-top: 20%;
-padding: 40px 20px;
-background-color: #20beca8a;
-color: white;
-position: relative;
-text-decoration: none;
+  justify-content: space-between;
+  align-items: flex-start; 
+  margin-top: 20%;
+  padding: 40px 20px;
+  background-color: #20beca8a;
+  color: white;
+  position: relative;
+  text-decoration: none;
 }
 .footer p{
   color: black;

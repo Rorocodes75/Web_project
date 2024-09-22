@@ -114,9 +114,23 @@
 .images-text a{
   margin-left: 200px;
   text-decoration: none;
-  background-color:#20beca8a;
-  margin-top: 500px;
+  background-color:#c5e6e9;
   color: black;
+  font-size: 20px;
+  padding: 1px 4px;
+  border-radius: 4px;
+}
+.images-text a:hover{
+  background-color: #24b7b4;
+
+}
+
+.icon{
+
+  width: 20px;
+  height: 20px;
+  margin-left: 3pt;
+  margin-right: 5pt;
 }
 .images-text h1 , p {
   text-align:left;
@@ -148,7 +162,6 @@
     z-index: -1;
 }
 
-
 .hospital-photo {
     width: 300px; 
     height: 250px;
@@ -168,9 +181,12 @@ padding: 40px 20px;
 background-color: #20beca8a;
 color: white;
 position: relative;
+text-decoration: none;
 }
 .footer p{
   color: black;
   text-align: center;
   margin-left: 300pt;
+  text-decoration: none;
+
 }

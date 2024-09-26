@@ -245,3 +245,24 @@
   text-decoration: none;
 
 }
+.search-container{
+  margin-bottom: 20px;
+}
+#doctorSearch{
+padding: 10px;
+font-size: 16px;
+width: 250px;
+margin-right: 10px;
+}
+button{
+  padding: 10px;
+  font-size: 16px;
+  background-color:#20beca8a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}

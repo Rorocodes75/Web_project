@@ -228,10 +228,10 @@ align-items: center;
 text-align: center;
 }
 .footer{
-display:flex;
+display:block;
 justify-content: space-between;
 align-items: flex-start; 
-margin-top: 20%;
+margin-top: 30%;
 padding: 12px 20px;
 background-color: #20beca8a;
 color: white;
@@ -318,7 +318,7 @@ margin-bottom: 10px;
 
 .background-image_visitor {
   width: 80%;
-  height: 90%;
+  height: 80%;
   position: absolute; 
   margin-top: -110pt;
   margin-left: 90pt;
@@ -334,8 +334,9 @@ margin-bottom: 10px;
 .image-visitor{
   position: absolute;
   top: -110px;
-  left: 600px;
+  left: 650px;
   height: 300px;
   width: 300px;
+  border-radius: 10%;
   
 }

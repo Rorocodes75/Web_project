@@ -134,14 +134,17 @@ height: 20px;
 margin-left: 3pt;
 margin-right: 5pt;
 }
-.images-text h1 , p {
+.images-text{
 text-align:left;
 margin-top: 25px;
 margin-right: 490px; ;
-margin-left: 200px; ;
+margin-left: 200px;
 }
 .images-text p{
-  color: #0f0e0e9d;
+  color: #0022ff73;
+}
+.images-text h1{
+  color: #0000ff;
 }
 .statment{
 color: rgb(23, 69, 205);
@@ -173,10 +176,12 @@ color: rgb(23, 69, 205);
 }
 
 .hospital-photo {
+  display: flex;
   width: 300px; 
   height: 250px;
   border-radius: 20%;
   position: absolute;
+  margin-left: 10%;
   top: 50%; 
   left: 70%;
   transform: translate(-50%, -50%); 

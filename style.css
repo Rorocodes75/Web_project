@@ -177,6 +177,15 @@ color: rgb(23, 69, 205);
   border-radius: 3%;
   z-index: -1;
 }
+.background-image-dep {
+  width: 80%;
+  height: 90%;
+  position: absolute; 
+  top: 100pt;
+  margin-left: 100pt;
+  border-radius: 3%;
+  z-index: -1;
+}
 
 .hospital-photo {
   display: flex;
@@ -189,6 +198,11 @@ color: rgb(23, 69, 205);
   left: 70%;
   transform: translate(-50%, -50%); 
   z-index: -1; 
+}
+.dep-title{
+  text-align: center;
+  margin-top: 50pt;
+  color: #0014f3;
 }
 .Department-1{
 width: 220px;
@@ -347,12 +361,27 @@ margin-bottom: 10px;
   border-radius: 3%;
   z-index: -5;
 }
-
+.pvtitle{
+  margin-top: -22%;
+  margin-bottom: 4.8%;
+  text-align: center;
+  margin-right: 20%;
+  color: #0000ff;
+}
 .pvisitor{
   margin-top: -120pt;
   margin-left: 120pt;
 }
+.pvisitor h2,h4{
+  color: #0000ff;
+  font-size: 18pt;
 
+}
+.pvisitor ul li{
+  list-style:square;
+  font-size: 16pt;
+  color: #045afbf7;
+}
 .image-visitor{
   position: absolute;
   top: -110px;

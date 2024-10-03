@@ -19,18 +19,18 @@ body{
   color: black;
   font: 1.5em italic;
 }
-
-.contact-info .email{
+.email a{
   text-align: center;
   margin-left: 110pt;
   margin-right: 20px;
   color: #1f7cdf;
-
+  text-decoration: none;
 }
-.contact-info .telephone{
+.telephone a{
   text-align: center;
   margin-right: 20px;
   color: #1f7cdf;
+  text-decoration: none;
 }
 
 .social-media {
@@ -141,7 +141,7 @@ margin-left: 200px;
 }
 .images-text h1{
   color: #0000ff;
-  font-size: 4.5ex;
+  font-size: 5.1ex;
 }
 .statment{
 color: rgb(23, 69, 205);
@@ -351,10 +351,13 @@ margin-bottom: 10px;
   margin-top: 50pt;
   color: #0014f3;
 }
-
+.pvbody{
+  margin: 0;
+  padding: 0;
+}
 .background-image_visitor {
   width: 80%;
-  height: 80%;
+  height: 78%;
   position: absolute; 
   margin-top: -110pt;
   margin-left: 90pt;
@@ -401,8 +404,8 @@ margin-bottom: 10px;
 .Gallery-title{
   margin-bottom: 2rem;
   text-align: center;
-  color: #1f7cdf;
-  font-size: 3em;
+  color: #0d35d4;
+  font-size: 4em;
 }
 .photo-gallery{
   display: flex;
@@ -574,19 +577,18 @@ textarea {
 }
 
 .background-fback {
-width: 100%;
-height: 140%;
-position: absolute; 
-margin-top: 35pt;
-margin-left: 20pt;
-border-radius: 3%;
-z-index: -1;
+  width: 80%;
+  height: 120%;
+  position: absolute; 
+  margin-top: 30pt;
+  margin-left: 90pt;
+  border-radius: 3%;
+  z-index: -1;
 }
 
 .loginbody{
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -599,6 +601,8 @@ z-index: -1;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 350px;
   text-align: center;
+  margin-top: 10%;
+  margin-left: 35%;
 }
 
 .login-container h2{
@@ -656,11 +660,9 @@ z-index: -1;
 .registerbody{
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
 }
 .register-container {
   background-color: #fff;
@@ -669,6 +671,8 @@ z-index: -1;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 350px;
   text-align: center;
+  margin-top: 10%;
+  margin-left: 35%;
 }
 
 .register-container h2 {

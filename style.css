@@ -817,8 +817,151 @@ font-weight: bold;}
   text-decoration: none; /* Remove underline */
   border-radius: 5px; /* Rounded corners */
 }
-
 .back-btn:hover {
   background-color: #1fa2a8; /* Darker shade on hover */
+}
+/* About Us Section */
+.about-us {
+  text-align: center;
+  background-color: #f0f8ff; /* Light background color for contrast */
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-top: 2px solid #20beca8a;
+  border-bottom: 2px solid #20beca8a;
+
+}
+
+.about-us h2 {
+  color: #006994; /* Main heading color */
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  max-width: 80%; /* Limits the width to 80% of the page */
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Slight shadow for emphasis */
+  overflow: hidden;
+}
+
+/* Hide all images by default */
+.slides {
+  display: none;
+}
+
+/* Developer image */
+.slides img {
+  width: 100%; /* Ensures the image spans the width of the container */
+  border-bottom: 2px solid #00adf1; /* Adds a bottom border for visual separation */
+  height: auto;
+  max-height: 400px; /* Restrict max height */
+}
+
+/* Developer details (name, interests, degree) */
+.slides h2 {
+  font-size: 1.8em;
+  color: #0c0095;
+  margin-top: 10px;
+}
+
+.slides p {
+  font-size: 1.2em;
+  color: #1300e3;
+  margin: 5px 0;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Hover effects on the buttons */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Dots at the bottom for navigation */
+.dots {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f8ff;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #030130;
+}
+
+/* Animation for the slides */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Responsive for smaller screens */
+@media screen and (max-width: 768px) {
+  .slides img {
+    max-height: 250px; /* Smaller image height for small screens */
+  }
+
+  .prev, .next {
+    font-size: 1em; /* Adjust button size for smaller screens */
+    padding: 12px;
+  }
+
+  .about-us h2 {
+    font-size: 2em; /* Smaller heading for mobile */
+  }
+
+  .slides h2, .slides p {
+    font-size: 1.2em; /* Smaller font size for mobile */
+  }
 }
 

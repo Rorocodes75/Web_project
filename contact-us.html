@@ -76,6 +76,12 @@
 <footer class="footer">
     <p>&copy 2024-25 / IMSIU / CCIS &trade;</p>
 </footer>
+<script>
+    // Show the feedback button if the user is logged in (from localStorage)
+    if (localStorage.getItem("loggedIn") === "true") {
+        document.getElementById('feedbackbutton').style.display = 'block';
+    }
+</script>
 
 </body>
 </html>

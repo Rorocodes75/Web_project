@@ -288,7 +288,7 @@ padding: 10px;
 font-size: 16px;
 width: 250px;
 margin-left: 450px;
-margin-top: 130px;  
+margin-top: 130px; 
 }
 button{
 padding: 10px;
@@ -298,6 +298,7 @@ color: white;
 border: none;
 border-radius: 5px;
 cursor: pointer;
+
 
 }
 button:hover {
@@ -338,9 +339,9 @@ margin-bottom: 10px;
 }
 .background-image_doctor {
   width: 90%; 
-  height: 90%;
+  height: 92%;
   position: absolute; 
-  margin-top: -200pt; 
+  margin-top: -220pt; 
   margin-left: 42pt; 
   border-radius: 3%;
   z-index: -5;
@@ -965,4 +966,3 @@ font-weight: bold;}
     font-size: 1.2em; /* Smaller font size for mobile */
   }
 }
-

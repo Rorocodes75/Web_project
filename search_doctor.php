@@ -4,7 +4,7 @@ session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "hospital_db.sql";
+$dbname = "hospital_DB";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

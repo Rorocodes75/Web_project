@@ -1,8 +1,6 @@
 <?php
-// Start a session if needed (for authentication or session-based features)
 session_start();
 
-// Connect to the MySQL database
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -10,16 +8,13 @@ $dbname = "hospital_db.sql";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Get the search query from the form
 if (isset($_GET['doctor_name'])) {
     $doctor_name = $conn->real_escape_string($_GET['doctor_name']);
 
-    // Query to search for the doctor by name
     $sql = "SELECT * FROM doctors WHERE name LIKE '%$doctor_name%'";
     $result = $conn->query($sql);
 }
@@ -33,7 +28,34 @@ if (isset($_GET['doctor_name'])) {
 </head>
 <body>
     <header class="header">
-        <!-- Your existing header and navbar code -->
+    <img class="logo" src="logo.png"/>
+                <nav class="navbar">
+                  <div class="dropdown">
+                    <img class="dropbtn" src="menu.png"/>
+                    <div class="dropdown-content">
+                      <a href="homepage.html">Home</a>
+                      <a href="Departments.html">Departments</a>
+                      <a href="doctors.html">Doctors</a>
+                      <a href="gallery.html">Gallery</a>
+                      <a href="patint-visitior.html">Patiants / Visitors</a>
+                      <a href="contact-us.html"> Contact us </a>
+                      <a href="aboutus.html"> About us </a>
+
+                    </div>
+                  </div> 
+                </nav>
+                <div class="contact-info">
+                    <div class="email"><a href="mailto:hospital@gmail.com">Email: hospital@gmail.com</a></div>
+                    <div class="telephone"><a href="tel:0552345649">Telephone: 055-234-5649</a></div>
+                </div>
+                <div class="social-media">
+                    <a href="https://instagram.com">
+                        <img class="social-icon" src="instagram.png" />
+                    </a>
+                    <a href="https://x.com">
+                        <img class="social-icon" src="x.png" />
+                    </a>
+                </div>
     </header>
 
     <div class="results-container">
@@ -63,11 +85,10 @@ if (isset($_GET['doctor_name'])) {
         <a href="Doctors.html" class="back-btn">Back to Search</a>
     </div>
     <footer class="footer">
-        <!-- Your existing footer code -->
+    <p>&copy 2024-25 / IMSIU / CCIS &trade;</p>
     </footer>
 </body>
 </html>
-
 <?php
 $conn->close();
 ?>

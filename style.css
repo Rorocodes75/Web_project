@@ -966,3 +966,31 @@ font-weight: bold;}
     font-size: 1.2em; /* Smaller font size for mobile */
   }
 }
+div.feedback-entry {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+/* Strong and emphasis tags within feedback entries */
+div.feedback-entry strong {
+  font-size: 18px;
+  color: #333;
+}
+
+div.feedback-entry em {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Feedback message styling */
+div.feedback-entry p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
+

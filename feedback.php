@@ -1,3 +1,39 @@
+<?php
+session_start();
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "hospital_DB";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $rating1 = $_POST['rating'];
+    $comments1= $conn->real_escape_string($_POST['comments']);
+
+    $sql = "INSERT INTO feedback (rating, comments) VALUES ('$rating1', '$comments1')";
+    if ($conn->query($sql) === TRUE) {
+        echo "<script>alert('Feedback submitted successfully!'); window.location.href = 'feedback.php';</script>";
+    } else {
+        echo "Error: " . $conn->error;
+    }
+}
+$sqlselect = "SELECT rating, comments FROM feedback";
+$result = $conn->query($sqlselect);
+
+if (!$result) {
+    echo "Error executing query: " . $conn->error;
+}
+
+$conn->close();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head> 
@@ -46,7 +82,7 @@
             <img class="background-fback" src="background img color.png" />
     <div class="feedback-container">
         <h2>Give us a rating! from 0 to 10, where 0 is horrible and 10 is Amazing!</h2>
-        <form action="submit_feedback.php" method="POST">
+        <form action="feedback.php" method="POST">
             <label for="rating">Rating:</label>
             <input type="number" id="rating" name="rating" min="0" max="10" placeholder="your rating" required>
             
@@ -58,10 +94,27 @@
                 <button class="feedback-SR" type="reset">Clear</button>
             </div>
         </form>
+
     </div>
+    <h2>Previous Feedback</h2>
+    <?php if ($result && $result->num_rows > 0): ?>
+    <?php while ($row = $result->fetch_assoc()): ?>
+        <div class="feedback-entry">
+            <strong>Rating: <?php echo htmlspecialchars($row['rating']); ?></strong>
+            <p><?php echo htmlspecialchars($row['comments']); ?></p>
+        </div>
+    <?php endwhile; ?>
+<?php else: ?>
+    <p>No feedback available.</p>
+<?php endif; ?>
+</body>
+</html>
     <footer class="footer">
         <p>&copy 2024-25 / IMSIU / CCIS &trade;</p>
     </footer>
 </div>
 </body>
 </html>
+<?php
+$conn->close();
+?>

@@ -96,7 +96,7 @@ $conn->close();
         </form>
 
     </div>
-    <h2>Previous Feedback</h2>
+    <h2 >Previous Feedback</h2>
     <?php if ($result && $result->num_rows > 0): ?>
     <?php while ($row = $result->fetch_assoc()): ?>
         <div class="feedback-entry">

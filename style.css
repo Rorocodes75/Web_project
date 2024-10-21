@@ -728,104 +728,104 @@ textarea {
 font-weight: bold;}
 
 
-/* Search Container Styles */
+
 .search-container {
-  max-width: 800px; /* Limit width of the search container */
-  margin: 20px auto; /* Center the container */
+  max-width: 800px;
+  margin: 20px auto; 
   padding: 20px;
-  background-color: #f9f9f9; /* Light background for contrast */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  text-align: center; /* Center text */
+  background-color: #f9f9f9; 
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  text-align: center; 
 }
 
-/* Search Form Styles */
+
 .search-container h2 {
-  color: #006994; /* Main heading color */
+  color: #006994; 
   margin-bottom: 15px;
 }
 
 .search-container label {
-  display: block; /* Make label block for spacing */
-  margin-bottom: 5px; /* Space between label and input */
-  font-weight: bold; /* Make labels bold */
+  display: block; 
+  margin-bottom: 5px; 
+  font-weight: bold; 
 }
 
 .search-container input[type="text"], 
 .search-container input[type="number"] {
-  width: 100%; /* Full width */
-  padding: 10px; /* Padding for comfort */
-  margin-bottom: 15px; /* Space below input */
-  border: 1px solid #ccc; /* Border */
-  border-radius: 4px; /* Rounded corners */
+  width: 100%; 
+  padding: 10px; 
+  margin-bottom: 15px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
 }
 
 .search-container .search-btn {
-  padding: 10px 20px; /* Button padding */
-  background-color: #20beca; /* Button color */
-  color: white; /* Text color */
-  border: none; /* Remove default border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
+  padding: 10px 20px; 
+  background-color: #20beca; 
+  color: white;
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
 }
 
 .search-container .search-btn:hover {
-  background-color: #1fa2a8; /* Darker shade on hover */
+  background-color: #1fa2a8; 
 }
 
-/* Results Table Styles */
+
 .results-container {
-  max-width: 800px; /* Limit width of the results container */
-  margin: 20px auto; /* Center the container */
+  max-width: 800px; 
+  margin: 20px auto; 
   padding: 20px;
-  background-color: #f9f9f9; /* Light background for contrast */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #f9f9f9; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .results-table {
-  width: 100%; /* Full width of the container */
-  border-collapse: collapse; /* Collapse borders */
-  margin-top: 20px; /* Space above the table */
+  width: 100%; 
+  border-collapse: collapse; 
+  margin-top: 20px; 
 }
 
 .results-table th, .results-table td {
-  padding: 12px 15px; /* Padding for table cells */
-  border: 1px solid #ddd; /* Light border */
-  text-align: left; /* Align text to the left */
+  padding: 12px 15px; 
+  border: 1px solid #ddd; 
+  text-align: left; 
 }
 
 .results-table th {
-  background-color: #20beca; /* Header background color */
-  color: white; /* Header text color */
+  background-color: #20beca; 
+  color: white;
 }
 
 .results-table tr:nth-child(even) {
-  background-color: #f3f3f3; /* Zebra striping for even rows */
+  background-color: #f3f3f3; 
 }
 
 .results-table tr:hover {
-  background-color: #ddd; /* Highlight row on hover */
+  background-color: #ddd; 
 }
 
-/* Back Button Styles */
+
 .back-btn {
-  display: inline-block; /* Block for proper spacing */
-  margin-top: 20px; /* Space above */
-  padding: 10px 20px; /* Padding for comfort */
-  background-color: #20beca; /* Button color */
-  color: white; /* Text color */
-  text-decoration: none; /* Remove underline */
-  border-radius: 5px; /* Rounded corners */
+  display: inline-block; 
+  margin-top: 20px; 
+  padding: 10px 20px; 
+  background-color: #20beca;
+  color: white; 
+  text-decoration: none; 
+  border-radius: 5px; 
   margin-left: 44%;
 }
 .back-btn:hover {
-  background-color: #1fa2a8; /* Darker shade on hover */
+  background-color: #1fa2a8; 
 }
-/* About Us Section */
+
 .about-us {
   text-align: center;
-  background-color: #f0f8ff; /* Light background color for contrast */
+  background-color: #f0f8ff; 
   padding: 40px 20px;
   margin-top: 40px;
   border-top: 2px solid #20beca8a;
@@ -834,35 +834,33 @@ font-weight: bold;}
 }
 
 .about-us h2 {
-  color: #006994; /* Main heading color */
+  color: #006994; 
   font-size: 2.5em;
   margin-bottom: 20px;
 }
 
-/* Slideshow container */
+
 .slideshow-container {
   position: relative;
-  max-width: 80%; /* Limits the width to 80% of the page */
+  max-width: 80%; 
   margin: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Slight shadow for emphasis */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
   overflow: hidden;
 }
 
-/* Hide all images by default */
+
 .slides {
   display: none;
 }
 
-/* Developer image */
 .slides img {
-  width: 100%; /* Ensures the image spans the width of the container */
-  border-bottom: 2px solid #00adf1; /* Adds a bottom border for visual separation */
+  width: 100%; 
+  border-bottom: 2px solid #00adf1; 
   height: auto;
-  max-height: 400px; /* Restrict max height */
+  max-height: 400px; 
 }
 
-/* Developer details (name, interests, degree) */
 .slides h2 {
   font-size: 1.8em;
   color: #0c0095;
@@ -875,7 +873,6 @@ font-weight: bold;}
   margin: 5px 0;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -902,12 +899,10 @@ font-weight: bold;}
   border-radius: 3px 0 0 3px;
 }
 
-/* Hover effects on the buttons */
 .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Dots at the bottom for navigation */
 .dots {
   text-align: center;
   padding: 10px;
@@ -929,7 +924,6 @@ font-weight: bold;}
   background-color: #030130;
 }
 
-/* Animation for the slides */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -947,23 +941,23 @@ font-weight: bold;}
   to {opacity: 1}
 }
 
-/* Responsive for smaller screens */
+
 @media screen and (max-width: 768px) {
   .slides img {
-    max-height: 250px; /* Smaller image height for small screens */
+    max-height: 250px; 
   }
 
   .prev, .next {
-    font-size: 1em; /* Adjust button size for smaller screens */
+    font-size: 1em; 
     padding: 12px;
   }
 
   .about-us h2 {
-    font-size: 2em; /* Smaller heading for mobile */
+    font-size: 2em; /
   }
 
   .slides h2, .slides p {
-    font-size: 1.2em; /* Smaller font size for mobile */
+    font-size: 1.2em; 
   }
 }
 div.feedback-entry {
@@ -976,7 +970,6 @@ div.feedback-entry {
   margin: 0 auto 20px;
 }
 
-/* Strong and emphasis tags within feedback entries */
 div.feedback-entry strong {
   font-size: 18px;
   color: #333;
@@ -987,7 +980,6 @@ div.feedback-entry em {
   color: #777;
 }
 
-/* Feedback message styling */
 div.feedback-entry p {
   font-size: 16px;
   color: #555;
